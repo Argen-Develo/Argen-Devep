@@ -12,8 +12,8 @@
 }
 
 :root   {
-    --color-bg: #10111E;
-    --color-bg-variant: #222230;
+    --color-bg: #1d1c1f;
+    --color-bg-variant: #171018;
     --color-primary: #63B4E5;
     --color-primary-variant: rgba(99,180,229,0.4);
     --color-white: #fff;
@@ -21,7 +21,7 @@
 
     --transition: all 400ms ease;
 
-    --container-width-lg: 75%;
+    --container-width-lg: 65%;
     --container-width-md: 86%;
     --container-width-ms: 90%;
 }
@@ -43,11 +43,12 @@ body {
 }
 
 
-/*----------------Gerals Styles-------------*/
+/*----------------Generals Styles-------------*/
 
 .container {
     width: var(--container-width-lg);
     margin: 0 auto;
+    height: 70%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -116,11 +117,18 @@ a:hover    {
     color: var(--color-bg);
 }
 
+.btn-primary:hover {
+    background-color: transparent;
+    color:var(--color-white);
+    border: 1px solid var(--color-white);
+
+}
+
 img  {
     display: block;
     width: 100%;
     object-fit: cover;
-}
+} 
 
 
 /*-------------------MediaQueries (MEDIUM)--------------*/
@@ -148,5 +156,4 @@ img  {
         margin-top: 2.5rem;
     }
 
-    
 }
